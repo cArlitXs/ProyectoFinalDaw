@@ -8,4 +8,4 @@ Se trabajará con:
 * FontAwesome
 * ...
 
-[Preview](https://carlitxs.github.io/ProyectoFinalDaw/Preview/)
+[Vista previa](https://carlitxs.github.io/ProyectoFinalDaw/Preview/)
