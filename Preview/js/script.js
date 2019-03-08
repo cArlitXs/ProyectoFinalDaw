@@ -8,4 +8,9 @@ var slideout = new Slideout({
   // Toggle button
   document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
-  });
+});
+
+/*--TOOLTIP--*/
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
