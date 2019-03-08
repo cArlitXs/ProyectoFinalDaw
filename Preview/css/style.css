@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    /*overflow-y: scroll;*/
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+  }
+
+  .slideout-open,
+  .slideout-open body,
+  .slideout-open .slideout-panel {
+    overflow: hidden;
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+  }
+  #panel{
+    background-color: rgba(255,255,255,1);
+  }
+  .btn{
+    border-radius:0px;
+  }
+  .clear{
+    content:"";
+    height: 50px;
+  }
