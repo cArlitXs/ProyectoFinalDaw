@@ -38,23 +38,48 @@ body {
 .deslizame {
   line-height: 19px;
   display: inline-block;
-  background: #e1e1e1;
-  color: #000;
+  background: #343a40;
   padding: 10px 20px 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px;
   position: relative;
   left: 50px;
+  animation: pulse 2s infinite;
 }
 .deslizame:before {
   content: '';
   display: inline-block;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
-  border-right: 6px solid #e1e1e1;
+  border-right: 6px solid #343a40;
   position: absolute;
   top: 50%;
   left: -5px;
   margin-top: -6px;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(150, 150, 150, 1);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(150, 150, 150, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(150,150,150, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(150,150,150, 1);
+    box-shadow: 0 0 0 0 rgba(150,150,150, 1);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(150,150,150, 0);
+    box-shadow: 0 0 0 10px rgba(150,150,150, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(150,150,150, 0);
+    box-shadow: 0 0 0 0 rgba(150,150,150, 0);
+  }
 }
 
 /**/
