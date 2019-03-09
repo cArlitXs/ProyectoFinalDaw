@@ -1,99 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <title>Proyecto</title>
-		<meta charset="utf-8">
-        <meta name="description" content="Description">
-        <meta name="theme-color" content="#000000" />
-        <!--Slideout-->
-        <meta http-equiv="cleartype" content="on">
-        <meta name="MobileOptimized" content="320">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <!---->
-        <!--Bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <!--FontAwesome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-        <!--Manifest-->
-        <link href="manifest.json" rel="manifest">
-        <!--Estilo local-->
-        <link rel="stylesheet" href="css/style.css">
-      </head>
-      <body>
-        <div class="container-fluid p-0">
-          <nav id="menu" class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Menu</a>
-      
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item dropdown bg-dark">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </nav>
-      
-          <main id="panel">
-            <header>
-              <button class="btn btn-dark toggle-button fixed-top"><i class="fas fa-bars"></i><!--☰--></button><!--tooltip attributes: data-toggle="tooltip" data-placement="right" title="Slide me!"-->
-              <span class="deslizame shake text-white d-md-none">Deslízame! <i class="far fa-hand-point-up"></i></span>
+  <title>Proyecto</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Description">
+  <meta name="theme-color" content="#000000" />
+  <!--Slideout-->
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <!---->
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!--Manifest-->
+  <link href="manifest.json" rel="manifest">
+  <!--Estilo local-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--Loader-->
+  <div id="content" class="loader">
+    <div class="loader-content">
+      <div class="loadBar">
+        <div class="bar"></div>
+        <h3>Cargando...</h3>
+      </div>
+    </div>
+  </div>
 
-              <div class="clear"></div>
-              <div class="container text-justify p-3">
-                <h2>Panel</h2>
-      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
-      
-                <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
-      
-                <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
-      
-                <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
-      
-                <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
-      
-                <h2>Panel</h2>
-      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
-      
-                <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
-      
-                <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
-      
-                <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
-      
-                <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
-              </div>
-            </header>
-          </main>
+  <!--Progress bar-->
+  <div class="progress">
+    <div class="progress-bar bg-primary" id="bar"></div>
+  </div>
+  
+  <div class="container-fluid p-0">
+    <nav id="menu" class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i> Gestión Comida <!--<span class="sr-only">(current)</span>--></a>
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown bg-dark">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> Mis datos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#"><i class="fas fa-user-edit"></i> Editar mis datos</a>
+            <a class="dropdown-item" href="#"><i class="fas fa-list-ul"></i> Ver mis pedidos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-users"></i> Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-map-marked-alt"></i> Contacto</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav fixed-bottom pl-3">
+        <li>
+          <a class="nav-link" href="#"><i class="fas fa-address-card"></i> Registrarse</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#"><i class="fas fa-user"></i> Iniciar sesión</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="panel">
+      <header>
+        <button class="btn btn-dark toggle-button fixed-top"><i class="fas fa-bars"></i><!--☰--></button><!--tooltip attributes: data-toggle="tooltip" data-placement="right" title="Slide me!"-->
+        <span class="deslizame shake text-white d-md-none">Deslízame! <i class="far fa-hand-point-up"></i></span>
+
+        <div class="clear"></div>
+        <div class="container text-justify p-3">
+          <h2>Panel</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
+
+          <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
+
+          <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
+
+          <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
+
+          <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
+
+          <h2>Panel</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
+
+          <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
+
+          <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
+
+          <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
+
+          <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
         </div>
+      </header>
+    </main>
+  </div>
 
-        <!--SlideOut-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+  <!--SlideOut-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 
-        <!--Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <!---->
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!---->
 
-        <!--Script local-->
-        <script src="js/script.js"></script>
-    </body>
+  <!--Script local-->
+  <script src="js/script.js"></script>
+</body>
 </html>
