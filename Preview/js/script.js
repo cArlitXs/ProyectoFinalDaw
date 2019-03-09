@@ -9,6 +9,10 @@ var slideout = new Slideout({
   document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
 });
+function fSlideOut(){
+  if(slideout.toggle() != true)
+    slideout.close();
+}
 
 /*--TOOLTIP--*/
 $(function () {
