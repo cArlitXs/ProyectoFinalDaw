@@ -57,20 +57,32 @@
         <li class="nav-item">
           <a class="nav-link" href="#"><i class="fas fa-map-marked-alt"></i> Contacto</a>
         </li>
-      </ul>
-      <ul class="nav navbar-nav fixed-bottom pl-3">
-        <li>
-          <a class="nav-link" href="#"><i class="fas fa-address-card"></i> Registrarse</a>
-        </li>
-        <li>
-          <a class="nav-link" href="#"><i class="fas fa-user"></i> Iniciar sesión</a>
-        </li>
+        <aside class="mt-5">
+          <small class="text-white">Publicidad:</small>
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card">
+              <img src="https://static.chollometro.com/threads/thread_full_screen/default/11732_1.jpg" class="card-img-top" alt="Publicidad">
+              <div class="card-body">
+                <h5 class="card-title">¡Nuevas hamburguesas!</h5>
+                <p class="card-text">Ven y disfruta de los nuevos sabores en TGB.</p>
+              </div>
+            </div>
+          </a>
+        </aside>
+        <span class="fixed-bottom">
+          <li class="nav-item" id="signup">
+            <a class="nav-link pl-3 text-white" href="#"><i class="fas fa-address-card"></i> Registrarse</a>
+          </li>
+          <li class="nav-item" id="signin">
+            <a  class="nav-link pl-3 text-white" href="#"><i class="fas fa-user"></i> Iniciar sesión</a>
+          </li>
+        </span>
       </ul>
     </nav>
 
     <main id="panel">
       <header>
-        <button class="btn btn-dark toggle-button fixed-top"><i class="fas fa-bars"></i><!--☰--></button><!--tooltip attributes: data-toggle="tooltip" data-placement="right" title="Slide me!"-->
+        <button id="openSlide" class="btn btn-dark toggle-button fixed-top"><i class="fas fa-bars"></i><!--☰--></button><!--tooltip attributes: data-toggle="tooltip" data-placement="right" title="Slide me!"-->
         <span class="deslizame shake text-white d-md-none">Deslízame! <i class="far fa-hand-point-up"></i></span>
 
         <div class="clear"></div>
