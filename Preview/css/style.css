@@ -181,6 +181,9 @@ aside a .card:hover{
 .panel-footer {
   margin: 10px auto 20px;
 }
+.panel-footer p{
+  margin: 0%;
+}
 .heart {
   font-style: normal;
   font-weight: 500;
