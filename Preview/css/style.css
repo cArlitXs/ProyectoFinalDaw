@@ -92,7 +92,7 @@ body {
 /*--Loader--*/
 .loader {
   display: block;
-  background-color: /*#e1e1e1*/ rgba(225, 225, 225, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   color: black;
   top: 0;
   left: 0;
@@ -106,41 +106,34 @@ body {
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
 }
-.loader-content {
-  display: block;
-  width: 100px;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+.loader-container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
 }
-/*---Loader Bar---*/
-.bar {
-  float: left;
-  width: 25px;
-  height: 6px;
-  border-radius: 50px;
-  background-color: #4b9cdb;
-  margin-bottom: 10px;
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
 }
-.l-10 {
-  animation-delay: 1.56s;
+.bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: #007bff;
+  border-radius: 50%;
+  animation: bouncing-loader 0.6s infinite alternate;
 }
-.loadBar .bar {
-  animation: loadingKeyFrame 2s cubic-bezier(.17,.37,.43,.67) infinite;
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
 }
-@keyframes loadingKeyFrame {
-  0%, 100% {
-      transform: translate(0,0);
-  }
-
-  50% {
-      transform: translate(100px,0);
-      background-color: #f5634a;
-      width: 25px;
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0);
   }
 }
 
@@ -184,13 +177,24 @@ aside a .card:hover{
   .github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
 }
 
+/*--Footer--*/
+.panel-footer {
+  margin: 10px auto 20px;
+}
+.heart {
+  font-style: normal;
+  font-weight: 500;
+  color: #c0392b;
+  text-decoration: none;
+}
+
 /**/
 #panel{
   background-color: rgba(255,255,255,1);
 }
 #openSlide{
   border-radius:0px;
-  z-index: 500;
+  z-index: 1000;
 }
 .clear{
   content:"";

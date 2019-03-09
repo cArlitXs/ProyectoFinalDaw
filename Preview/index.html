@@ -24,13 +24,14 @@
 <body>
   <!--Loader-->
   <div id="content" class="loader">
-    <div class="loader-content">
-      <div class="loadBar">
-        <div class="bar"></div>
-        <h3>Cargando...</h3>
+    <div class="loader-container">
+      <div class="bouncing-loader">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </div>
-  </div>
+  </div>    
 
   <!--Progress bar-->
   <div class="progress">
@@ -84,7 +85,7 @@
       <button id="openSlide" class="btn btn-dark toggle-button fixed-top"><i class="fas fa-bars"></i><!--☰--></button><!--tooltip attributes: data-toggle="tooltip" data-placement="right" title="Slide me!"-->
       <span class="deslizame shake text-white d-md-none">Deslízame! <i class="far fa-hand-point-up"></i></span>
       
-      <header onclick="CloseSlide()">
+      <div>
         <!--View source on GitHub-->
         <a href="https://github.com/cArlitXs" class="github-corner" aria-label="View source on GitHub">
           <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
@@ -95,7 +96,7 @@
         </a>
 
         <div class="clear"></div>
-        <div class="container text-justify p-3">
+        <div class="container text-justify p-3" onclick="CloseSlide()">
           <h2>Panel</h2>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
@@ -119,8 +120,12 @@
           <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
 
           <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
+        
+          <footer class="panel-footer text-center">
+            <p>With <span class="heart"><i class="fas fa-heart"></i></span> by <a class="text-decoration-none" href="https://github.com/cArlitXs" target="_blank">cArlitOs</a></p>
+          </footer>
         </div>
-      </header>
+      </div>
     </main>
   </div>
 

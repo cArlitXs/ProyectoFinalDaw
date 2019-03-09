@@ -5,12 +5,15 @@ var slideout = new Slideout({
     'tolerance': 70
   });
   
-  // Toggle button
-  document.querySelector('.toggle-button').addEventListener('click', function() {
+// Toggle button
+document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
-});
+  }
+);
 function CloseSlide(){
+  if(slideout.isOpen()){
     slideout.close();
+  }
 }
 
 /*--TOOLTIP--*/
@@ -19,9 +22,9 @@ $(function () {
 })
 
 /*--Progress Bar--*/
-window.onscroll = function () { myFunction() };
+window.onscroll = function () { scrollBarJS() };
 
-function myFunction() {
+function scrollBarJS() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
