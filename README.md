@@ -11,4 +11,4 @@ Se trabajará con:
 **Backend**:
 * ASP.NET MVC
 
-[Vista previa](https://carlitxs.github.io/ProyectoFinalDaw/Preview/)
+[Vista previa (solo diseño)](https://carlitxs.github.io/ProyectoFinalDaw/Preview/)
