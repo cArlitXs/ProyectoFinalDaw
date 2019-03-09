@@ -190,6 +190,7 @@ aside a .card:hover{
 }
 #openSlide{
   border-radius:0px;
+  z-index: 500;
 }
 .clear{
   content:"";
