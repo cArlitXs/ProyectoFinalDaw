@@ -1,0 +1,11 @@
+{
+    "start_url": "https://carlitxs.github.io/ProyectoFinalDaw/Preview/",
+    "lang": "es-ES",
+    "short_name": "Gestión Comida",
+    "name": "Tienda Gestión Comida",
+    "description": "Tiendas de comida para llevar.",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#000000",
+    "background_color": "#e1e1e1"
+  }
