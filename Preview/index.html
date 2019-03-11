@@ -13,6 +13,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <!---->
+  <!--Semantic UI-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!--FontAwesome-->
@@ -146,33 +148,194 @@
           </svg>
         </a>
 
+        <!--Boton Alerta Carrito con alerta-->
+        <!--<a class="botonCarrito btn btn-primary" href="#"><i class="fa fa-shopping-cart fa-2x"></i><span><i class="fas fa-bell"></i></span></a>-->
+        <!--Boton Alerta Carrito sin alerta-->
+        <a class="botonCarrito btn btn-primary" href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
         <div class="clear"></div>
 
         <!--Contenedor-->
         <div class="container text-justify p-3">
-          <h2>Panel</h2>
+          <h1>Gestión Comida - Productos</h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
+          <div class="row gallery">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/1.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
 
-          <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
 
-          <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
 
-          <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/2.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
 
-          <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
 
-          <h2>Panel</h2>
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet pharetra nibh, id iaculis ligula ullamcorper nec. Duis nec metus ex. Vivamus elementum nisl sit amet felis tempus, sit amet consequat justo tempus. Etiam ac vestibulum tellus. Vivamus volutpat, odio nec sagittis condimentum, justo tortor posuere nunc, a dapibus tortor tellus quis lectus. Phasellus eu nisl metus. Aliquam ac maximus odio. Sed porttitor, metus vitae bibendum varius, nulla lorem maximus turpis, at sollicitudin quam augue in nunc. Etiam viverra condimentum libero eget aliquam. In hac habitasse platea dictumst. Suspendisse potenti. Proin justo ante, egestas id arcu a, maximus condimentum nibh. Mauris nec placerat sem, eget mattis nisi. Quisque dapibus urna vitae gravida molestie. Fusce pulvinar tellus ut lectus consequat, sed pellentesque lectus porta.</p>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/3.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
 
-          <p>Duis ultrices tempus augue, sed sollicitudin mi feugiat a. In volutpat efficitur tellus, ut facilisis erat varius et. In sed arcu aliquam risus pharetra malesuada ac id urna. Fusce ultrices justo non arcu cursus, eu condimentum metus luctus. Mauris tempus orci id tortor blandit fringilla. Proin sit amet interdum tortor, et fermentum lorem. Curabitur eu lorem tempus, feugiat enim nec, vestibulum libero. Mauris quis porttitor nisi. Vestibulum sed nisl ac orci egestas lacinia id nec metus.</p>
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
 
-          <p>Aliquam fermentum elementum malesuada. Curabitur dictum turpis ut venenatis eleifend. Vivamus nulla lorem, imperdiet id ullamcorper eu, tempor eu urna. Nunc urna odio, hendrerit in ante eget, euismod ultrices dolor. Sed mattis tellus at leo rhoncus pellentesque. Aliquam mollis magna sed auctor fermentum. Vivamus id nibh in tellus fringilla imperdiet et eu nulla.</p>
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
 
-          <p>Proin laoreet, elit nec posuere porta, leo velit tempus purus, ut efficitur erat tellus vel erat. Fusce ut ultrices justo, ac accumsan eros. Praesent vitae dui mauris. Suspendisse viverra semper tincidunt. Vivamus elementum, nisl id aliquam semper, justo tortor pretium quam, quis aliquam risus lorem vitae neque. Nulla non lectus hendrerit, aliquam libero ut, mollis magna. Aliquam sit amet dignissim nunc. Ut viverra euismod neque vel facilisis.</p>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/4.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
 
-          <p>Morbi rhoncus finibus ante sit amet consequat. Donec id orci at sapien scelerisque tempor sit amet a lacus. Integer ac sapien tortor. Etiam condimentum libero ut metus finibus, vel facilisis nunc semper. Donec aliquet laoreet odio sed fringilla. Nullam imperdiet orci at ipsum molestie auctor. Sed blandit, tellus et elementum dignissim, justo turpis pretium magna, vel vulputate elit lorem sed turpis. Sed metus nisi, rutrum rutrum felis non, rhoncus eleifend purus.</p>
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/5.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
+
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/6.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
+
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/7.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
+
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+              <div class="card mt-3">
+                <img src="./images/gallery/8.jpg" class="card-img-top" alt="Menu">
+                <div class="card-body">
+                  <h5 class="card-title">Producto</h5>
+                  <p class="card-text">Descripción del producto que el cliente va a comprar para su consumo.</p>
+
+                  <!--Boton Comprar-->
+                  <div class="botonComprar ui vertical animated button bg-primary text-white" tabindex="0">
+                    <div class="hidden content">Comprar</div>
+                    <div class="visible content">
+                      <!--<i class="shop icon"></i>-->
+                      <i class="fas fa-shopping-basket"></i>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <small><a href="#">Categorías</a></small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <footer class="panel-footer text-center bg-light py-3 m-0">
           <p>With <span class="heart"><i class="fas fa-heart"></i></span> by <a class="text-decoration-none" href="https://github.com/cArlitXs" target="_blank">cArlitOs</a></p>
@@ -189,6 +352,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!---->
+
+  <!--Semantic UI-->
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 
   <!--Script local-->
   <script src="./js/script.js"></script>
