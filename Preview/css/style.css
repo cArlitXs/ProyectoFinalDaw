@@ -273,6 +273,7 @@ aside a .card:hover{
   bottom: 25px;
   right: 30px;
   transition: all .2s ease-in-out;
+  z-index: 9999999;
 }
 
 .botonCarrito span {
