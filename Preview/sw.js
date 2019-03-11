@@ -1,5 +1,5 @@
 //Service Worker
-self.addEventListener('install', function(event){
+/*self.addEventListener('install', function(event){
   event.waitUntil(
     caches.open('GestionComida')
       .then(function(cache){
@@ -30,3 +30,4 @@ self.addEventListener('fetch', function(event){
       })
   );
 });
+*/
