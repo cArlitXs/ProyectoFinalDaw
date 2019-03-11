@@ -1,3 +1,7 @@
+//PWA
+navigator.serviceWorker.register('./sw.js');
+
+//SlideOut
 var slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
@@ -5,7 +9,7 @@ var slideout = new Slideout({
     'tolerance': 70
   });
   
-// Toggle button
+//SlideOut - Toggle button
 document.querySelector('.toggle-button').addEventListener('click', function() {
     slideout.toggle();
   }
@@ -16,12 +20,12 @@ function CloseSlide(){
   }
 }
 
-/*--TOOLTIP--*/
+//TOOLTIP
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
 
-/*--Progress Bar--*/
+//Progress Bar
 window.onscroll = function () { scrollBarJS() };
 
 function scrollBarJS() {
@@ -31,7 +35,7 @@ function scrollBarJS() {
     document.getElementById("bar").style.width = scrolled + "%";
 }
 
-/*---LOADER---*/
+//LOADER
 window.onload = function () {
     let contenedor = document.getElementById('content');
     contenedor.style.visibility = 'hidden';
