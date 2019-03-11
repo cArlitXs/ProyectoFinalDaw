@@ -259,10 +259,6 @@ aside a .card:hover{
   transition: all ease-in-out 0.3s;
 }
 
-/*--Boton Comprar--*/
-.botonComprar{
-  width: 100%;
-}
 /*--Boton Carrito--*/
 .botonCarrito {
   position: fixed !important;
@@ -287,6 +283,57 @@ aside a .card:hover{
   right: -10px;
   border: 1px solid #fff;
 }
+.botonCarrito:hover{
+  transition: 0.5s;
+  background-color: #28a745 !important;
+  color: white;
+}
+.botonCarritoUI{
+  position: fixed !important;
+  padding: 15px;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  padding: 0 !important;
+  bottom: 25px;
+  right: 30px;
+  transition: all .2s ease-in-out;
+  z-index: 9999999;
+}
+.botonCarritoUI > div{
+  border-radius: 50% !important;
+  width: 60px;
+  height: 60px;
+}
+.botonCarritoUI .visible{
+  position: absolute !important;
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding-top: 6px;
+  margin-right: 14px !important;
+}
+.botonCarritoUI .hidden{
+  color: white;
+}
+.botonCarritoUI > div:hover{
+  background-color: #28a745 !important;
+  transition: 0.4s;
+}
+
+/*--Boton Comprar--*/
+.botonComprar{
+  width: 100%;
+}
+.botonComprar:hover{
+  background-color: #28a745 !important;
+  transition: 0.4s;
+}
+.botonComprar:active{
+  background-color: #28a745 !important;
+  transition: 0.4s;
+}
+
 
 /**/
 #panel{
