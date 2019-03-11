@@ -1,7 +1,7 @@
 //Service Worker
 self.addEventListener('install', function(event){
   event.waitUntil(
-    caches.open('first-app')
+    caches.open('GestionComida')
       .then(function(cache){
         cache.addAll([
           '/',

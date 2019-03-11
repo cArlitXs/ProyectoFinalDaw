@@ -1,5 +1,5 @@
 //PWA
-navigator.serviceWorker.register('./sw.js');
+navigator.serviceWorker.register('/sw.js');
 
 //SlideOut
 var slideout = new Slideout({
