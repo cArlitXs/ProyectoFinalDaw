@@ -42,3 +42,21 @@ window.onload = function () {
     contenedor.style.transition = "all 0.2s";
     contenedor.style.opacity = '0';
 }
+
+// Hide Cookie Bar on click
+$("#close-cookie-bar").click(function(){
+  $('#cookie-container').fadeOut("slow");
+  Cookies.set('cookie-accept', 'accepted', { expires: 5000 });
+});
+
+// Checking Cookie - if complete hide survey else show survey
+$(document).ready(function(){
+$('#cookie-container').hide();
+if (Cookies.get('cookie-accept') == ('accepted')) {
+  $('#cookie-container').hide();
+  console.log('Cookies Accepted');
+} else {
+  $('#cookie-container').show();
+  console.log('Show Cookie Bar');
+}
+});

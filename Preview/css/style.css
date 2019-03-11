@@ -4,6 +4,9 @@
   font-family: 'B612', sans-serif;
   font-display: swap;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   width: auto;
@@ -189,6 +192,71 @@ aside a .card:hover{
   font-weight: 500;
   color: #c0392b;
   text-decoration: none;
+}
+
+/*--Cookie Container--*/
+#cookie-container {
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  border-radius: 0px;
+  border: none;
+  box-shadow: none;
+}
+
+#cookie-text {
+  position: relative;
+}
+
+.icon {
+	height: 30px;
+	/*margin-bottom: -10px*/
+}
+
+#close-cookie-bar {
+  opacity: 0.8;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#close-cookie-bar:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#cookie-text span {
+  display: inline-block;
+  color: #fff;
+  width: 90%;
+  text-align: left;
+  line-height: 2.6;
+}
+
+#cookie-text span a {
+  color: #fff;
+  text-decoration: underline;
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+#cookie-text span a:hover {
+  opacity: 0.7;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
 }
 
 /**/
