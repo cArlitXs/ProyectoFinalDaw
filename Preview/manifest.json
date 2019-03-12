@@ -7,7 +7,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/Preview",
-  "start_url": "/",
+  "start_url": "https://carlitxs.github.io/ProyectoFinalDaw/Preview/",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
