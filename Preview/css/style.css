@@ -44,6 +44,23 @@ body {
   display: block;
 }
 
+/**/
+/*.panel:before {
+  content: '';
+  display: block;
+  background-color: rgba(0,0,0,0);
+  transition: background-color 0.5s ease-in-out;
+}
+
+.panel-open:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 99;
+}*/
+
 /*--DESLIZAME--*/
 .deslizame {
   line-height: 19px;
@@ -334,6 +351,19 @@ aside a .card:hover{
   transition: 0.4s;
 }
 
+/*--Buscador--*/
+.buscador input{
+  padding: 0 !important;
+  padding-left: 10px !important;
+  height: 40px !important;
+}
+.buscador .button{
+  height: 40px !important;
+}
+.buscador .button:hover{
+  background-color: #28a745 !important;
+  transition: 0.4s;
+}
 
 /**/
 #panel{
