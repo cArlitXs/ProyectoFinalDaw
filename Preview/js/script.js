@@ -69,7 +69,7 @@ window.onload = function () {
     contenedor.style.transition = "all 0.2s";
     contenedor.style.opacity = '0';
 }
-
+/*
 // Hide Cookie Bar on click
 $("#close-cookie-bar").click(function(){
   $('#cookie-container').fadeOut("slow");
@@ -86,4 +86,4 @@ if (Cookies.get('cookie-accept') == ('accepted')) {
   $('#cookie-container').show();
   console.log('Show Cookie Bar');
 }
-});
+});*/

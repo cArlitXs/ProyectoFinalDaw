@@ -6,7 +6,7 @@
   "background_color": "#e1e1e1",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/Preview",
+  "scope": "/Preview",
   "start_url": "https://carlitxs.github.io/ProyectoFinalDaw/Preview/",
   "icons": [
     {
